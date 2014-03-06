@@ -11588,8 +11588,11 @@ dd.image-caption
 {
     padding: 22px 0;
 
-    border-bottom: 1px dotted #999;
     background: #f8f8f8;
+}
+.app-signin-group .app-signin-control
+{
+    border-bottom: 1px dotted #999;
 }
 .app-signin-group label,
 .app-signin-group .signin-label
