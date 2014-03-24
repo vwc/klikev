@@ -22,7 +22,7 @@
 }
 
 .app-signin-content {
-    padding: @line-height-computed ceil((@line-height-computed / 2));
+    padding: @line-height-computed 0;
 }
 
 .app-signin-form {
@@ -30,10 +30,13 @@
 }
 
 .app-signin-group {
-    padding: @line-height-computed 0;
+    padding: 0;
     background: @navbar-default-bg;
     .app-signin-control {
-        border-bottom: 1px dotted @gray-light;
+        padding: @line-height-computed 0 floor((@line-height-computed * 2));
+        &.app-signin-control-bordered {
+            border-bottom: 1px dotted @gray-light;
+        }
     }
     label,
     .signin-label {
@@ -66,6 +69,6 @@
 
 .app-signin-actions,
 .app-register-actions {
-    padding: @line-height-computed 0;
+    padding: @line-height-computed;
 }
 

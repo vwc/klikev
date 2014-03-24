@@ -4,19 +4,26 @@
 
 
 // Green (rgb: 142, 192, 94)
-@app-primary:                   #8ec05e;
+@app-primary:                   #f37256;
+@app-secondary:                 #fac0ac;
+
 // Red (rgb: 237, 98, 98)
 @app-danger:                    #ed6262;
 // Gray
-@app-gray:                      #5a5f64;
-@app-gray-light:                #e3e4e5;
+@app-gray:                      #ededed;
+@app-gray-dark:                 #434343;
 
-// Example overides
-@link-color:                    @app-danger;
-@brand-primary:                 @app-danger;
+// Variable overrides
+@text-color:                    @app-gray-dark;
+@link-color:                    @app-primary;
+@brand-primary:                 @app-primary;
 
 @font-size-base:                16px;
-@font-family-base:              'Open Sans', @font-family-sans-serif;
+@font-family-base:              'Source Sans Pro', @font-family-sans-serif;
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    'Oswald', @font-family-base;
+@headings-font-weight:    400;
 
 // Font awesome font path
 @fa-font-path:                  "../../assets/fonts";

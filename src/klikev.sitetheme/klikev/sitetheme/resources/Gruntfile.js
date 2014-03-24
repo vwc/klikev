@@ -42,12 +42,12 @@ module.exports = function (grunt) {
 
         concat: {
             options: {
-                banner: '<%= banner %><%= jqueryCheck %>',
+                banner: '<%= banner %>',
                 stripBanners: false
             },
             dist: {
                 src: [
-                    'bower_components/jquery/jquery.js',
+                    'bower_components/jquery/dist/jquery.js',
                     'bower_components/modernizr/modernizr.js',
                     'bower_components/bootstrap/dist/js/bootstrap.js',
                     'bower_components/holderjs/holder.js',
