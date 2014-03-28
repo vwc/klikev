@@ -11590,13 +11590,12 @@ dd.image-caption
 
     background: #f8f8f8;
 }
-.app-signin-group .app-signin-control
+.app-signin-group.app-signin-group-text
 {
-    padding: 22px 0 44px;
-}
-.app-signin-group .app-signin-control.app-signin-control-bordered
-{
-    border-bottom: 1px dotted #999;
+    margin-top: 22px;
+    padding: 44px 0;
+
+    border-top: 1px dotted #999;
 }
 .app-signin-group label,
 .app-signin-group .signin-label
@@ -11604,6 +11603,14 @@ dd.image-caption
     font-weight: 300;
 
     color: #555;
+}
+.app-signin-control
+{
+    padding: 22px 0 44px;
+}
+.app-signin-control.app-signin-control-bordered
+{
+    border-bottom: 1px dotted #999;
 }
 .page-aside
 {
