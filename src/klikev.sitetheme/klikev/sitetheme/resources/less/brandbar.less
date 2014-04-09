@@ -3,6 +3,13 @@
 // -----------------------------------------
 
 .app-brandbar {
-    padding: @line-height-computed;
-    background-color: @app-secondary;
+  padding: @line-height-computed;
+}
+
+.app-brand {
+  display: block;
+  margin-top: @line-height-computed;
+  @media (min-width: @screen-md-min) {
+    margin-top: 0;
+  }
 }

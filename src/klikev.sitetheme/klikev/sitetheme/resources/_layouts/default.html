@@ -10,10 +10,10 @@
   <body>
     <a class="sr-only" href="#content">Skip navigation</a>
     {% include toolbar.html %}
-    {% include brandbar.html %}
 
     <div class="app-header">
-      <div class="container">
+      {% include brandbar.html %}
+      <div class="container app-header-claim">
         <h1>{{ page.title }}</h1>
         <p>{{ page.lead }}</p>
       </div>

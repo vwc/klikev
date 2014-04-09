@@ -2,27 +2,14 @@
 // Application stylesheet
 // -----------------------------------------------
 
-.app-toolbar + .app-brandbar {
+.app-toolbar + .app-header {
     margin-top: @navbar-height;
 }
 
 .app-header {
-  padding: @jumbotron-padding;
   margin-bottom: @jumbotron-padding;
   color: @jumbotron-color;
-  background-color: @app-secondary;
-
-  h1,
-  .h1 {
-    color: @brand-primary;
-  }
-  p {
-    margin-bottom: (@jumbotron-padding / 2);
-    font-family: @font-family-base;
-    font-size: @jumbotron-font-size;
-    font-weight: 200;
-  }
-
+  background:url(../assets/img/header-bg.png) no-repeat 50% 0 @app-secondary;
   > hr {
     border-top-color: darken(@jumbotron-bg, 10%);
   }
@@ -43,11 +30,25 @@
       padding-left:  (@jumbotron-padding * 2);
       padding-right: (@jumbotron-padding * 2);
     }
-
-    h1,
-    .h1 {
-      font-size: (@font-size-base * 4.5);
-    }
   }
 }
 
+.app-header-claim {
+  margin-top: ceil((@line-height-computed * 2));
+  padding: @jumbotron-padding;
+  h1,
+  .h1 {
+    color: @brand-primary;
+    text-transform: uppercase;
+    @media screen and (min-width: @screen-sm-min) {
+      font-size: ceil((@font-size-base * 3));
+    }
+  }
+  p {
+    margin-bottom: (@jumbotron-padding / 2);
+    font-family: @font-family-base;
+    font-size: @jumbotron-font-size;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+}
