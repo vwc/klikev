@@ -1,13 +1,8 @@
 from fabric.api import task
-from fabric.api import cd
 from fabric.api import env
-from fabric.api import run
-from fabric.api import execute
 
-from ade25.fabfiles import server
 from ade25.fabfiles import project
 
-from ade25.fabfiles import hotfix
 
 env.use_ssh_config = True
 env.forward_agent = True
@@ -17,7 +12,7 @@ env.hosts = ['z13']
 env.webserver = '/opt/webserver/buildout.webserver'
 env.code_root = '/opt/sites/klikev/buildout.klikev'
 env.local_root = '/Users/cb/dev/klikev/buildout.klikev'
-env.sitename = 'plonesite'
+env.sitename = 'klikev'
 env.code_user = 'root'
 env.prod_user = 'www'
 
