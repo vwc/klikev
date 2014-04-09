@@ -8,9 +8,14 @@
   text-transform: uppercase;
   @media screen and (min-width: @screen-sm-min) {
     background-color: transparent;
+    border: none;
   }
   .navbar-nav {
-
+    > li {
+      margin-right: floor((@line-height-computed / 2))
+    }
+    > li > a {
+      background: @navbar-default-link-active-bg;
+    }
   }
-
 }

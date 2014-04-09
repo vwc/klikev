@@ -34,7 +34,7 @@
 }
 
 .app-header-claim {
-  margin-top: ceil((@line-height-computed * 2));
+  margin-top: ceil((@navbar-height * 1.5));
   padding: @jumbotron-padding;
   h1,
   .h1 {
@@ -50,5 +50,8 @@
     font-size: @jumbotron-font-size;
     font-weight: 200;
     text-transform: uppercase;
+  }
+  @media screen and (min-width: @screen-sm-min) {
+    margin-top: ceil((@navbar-height * 2.5));
   }
 }

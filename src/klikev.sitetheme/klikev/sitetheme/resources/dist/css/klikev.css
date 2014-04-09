@@ -5282,13 +5282,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .navbar-default .navbar-nav > li > a:focus
 {
     color: #333;
-    background-color: transparent;
+    background-color: #f69880;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus
 {
-    color: #555;
+    color: #323232;
     background-color: #f47f61;
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -5320,7 +5320,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus
 {
-    color: #555;
+    color: #323232;
     background-color: #f47f61;
 }
 @media (max-width: 767px)
@@ -5333,13 +5333,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus
     {
         color: #333;
-        background-color: transparent;
+        background-color: #f69880;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus
     {
-        color: #555;
+        color: #323232;
         background-color: #f47f61;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
@@ -11681,8 +11681,17 @@ dd.image-caption
 {
     .app-navbar
     {
+        border: none;
         background-color: transparent;
     }
+}
+.app-navbar .navbar-nav > li
+{
+    margin-right: 11px;
+}
+.app-navbar .navbar-nav > li > a
+{
+    background: #f47f61;
 }
 .app-footer
 {
@@ -11728,7 +11737,7 @@ dd.image-caption
 }
 .app-header-claim
 {
-    margin-top: 44px;
+    margin-top: 75px;
     padding: 30px;
 }
 .app-header-claim h1,
@@ -11755,5 +11764,12 @@ dd.image-caption
     margin-bottom: 15px;
 
     text-transform: uppercase;
+}
+@media screen and (min-width: 768px)
+{
+    .app-header-claim
+    {
+        margin-top: 125px;
+    }
 }
 /*# sourceMappingURL=klikev.css.map */
