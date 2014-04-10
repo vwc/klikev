@@ -24,7 +24,7 @@
 
   @media screen and (min-width: @screen-sm-min) {
     padding-top:    (@jumbotron-padding * 1.6);
-    padding-bottom: (@jumbotron-padding * 1.6);
+    padding-bottom: (@jumbotron-padding);
 
     .container & {
       padding-left:  (@jumbotron-padding * 2);
@@ -44,14 +44,22 @@
       font-size: ceil((@font-size-base * 3));
     }
   }
-  p {
-    margin-bottom: (@jumbotron-padding / 2);
-    font-family: @font-family-base;
-    font-size: @jumbotron-font-size;
-    font-weight: 200;
+  .app-header-claim-abstract {
+    //margin-bottom: (@jumbotron-padding / 2);
+    //font-family: @font-family-base;
+    //font-size: @jumbotron-font-size;
+    //font-weight: 200;
     text-transform: uppercase;
   }
   @media screen and (min-width: @screen-sm-min) {
     margin-top: ceil((@navbar-height * 2.5));
+  }
+}
+
+.page-header {
+  border-width: 4px;
+  border-color: @brand-primary;
+  > h1 {
+    text-transform: uppercase;
   }
 }
