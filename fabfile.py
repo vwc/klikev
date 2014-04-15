@@ -1,8 +1,13 @@
 from fabric.api import task
+from fabric.api import cd
 from fabric.api import env
+from fabric.api import run
+from fabric.api import execute
 
+from ade25.fabfiles import server
 from ade25.fabfiles import project
 
+from ade25.fabfiles import hotfix
 
 env.use_ssh_config = True
 env.forward_agent = True

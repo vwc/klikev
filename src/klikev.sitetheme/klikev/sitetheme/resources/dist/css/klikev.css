@@ -11702,6 +11702,20 @@ dd.image-caption
     border-top: 1px solid #999;
     background: #eee;
 }
+.app-footer-nav
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+@media screen and (min-width: 768px)
+{
+    .app-footer-nav
+    {
+        width: 768px;
+    }
+}
 .app-toolbar + .app-header
 {
     margin-top: 50px;
@@ -11711,7 +11725,7 @@ dd.image-caption
     margin-bottom: 30px;
 
     color: inherit;
-    background: url(../assets/img/header-bg.png) no-repeat 50% 0 #fac0ac;
+    background: url(../assets/img/header-bg-01.png) no-repeat 50% 0 #fac0ac;
 }
 .app-header > hr
 {
@@ -11777,5 +11791,11 @@ dd.image-caption
 .page-header > h1
 {
     text-transform: uppercase;
+}
+#content-core h2,
+#content-core h3,
+#content-core h4
+{
+    color: #f37256;
 }
 /*# sourceMappingURL=klikev.css.map */

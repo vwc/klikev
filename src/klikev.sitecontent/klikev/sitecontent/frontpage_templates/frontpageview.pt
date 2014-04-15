@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="hph.sitecontent">
+<body>
+
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
+
+    <section class="app-page app-content-fp" id="app-content"
+        tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                    portal_url context/portal_url">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4" id="app-col-1">
+            Col A
+        </div>
+        <div class="col-xs-12 col-sm-4" id="app-col-2">
+            Col B
+        </div>
+        <div class="col-xs-12 col-sm-4" id="app-col-3">
+            Col C
+        </div>
+      </div>
+    </section> <!-- /container app-content -->
+
+
+     <aside class="app-aside" id="app-aside">
+        <section class="app-tile app-content-body" id="app-aside-content">
+            <article class="app-fp-cta">
+                <a class="btn btn-primary btn-lg"
+                    tal:attributes="href string:${portal_url}/spenden">
+                    Jetzt Spenden</a>
+            </article>
+      </section>
+    </aside>
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+
