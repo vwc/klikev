@@ -11783,6 +11783,31 @@ dd.image-caption
         margin-top: 125px;
     }
 }
+.splashbox
+{
+    padding: 25px 0;
+}
+.splashbox .splashbox-header
+{
+    padding: 25px;
+
+    text-align: center;
+}
+.app-box-header
+{
+    padding: 5px 12px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    background: #f37256;
+}
+.app-box-content
+{
+    padding: 25px;
+
+    border-left: 1px solid #555;
+}
 .page-header
 {
     border-width: 4px;
