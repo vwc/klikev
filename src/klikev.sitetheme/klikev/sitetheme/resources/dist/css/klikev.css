@@ -11693,6 +11693,16 @@ dd.image-caption
 {
     background: #f47f61;
 }
+.app-logobar
+{
+    padding: 50px 0;
+
+    border-top: 1px solid #999;
+}
+.app-logobar-section
+{
+    text-align: center;
+}
 .app-footer
 {
     padding: 25px;
@@ -11792,6 +11802,8 @@ dd.image-caption
     padding: 25px;
 
     text-align: center;
+
+    color: #999;
 }
 .splashbox-icon
 {
@@ -11801,6 +11813,7 @@ dd.image-caption
     height: 50px;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 6px;
 
     text-align: center;
 

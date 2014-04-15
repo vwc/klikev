@@ -195,6 +195,48 @@ module.exports = function (grunt) {
                 pattern: '../assets/img/klik-ev-logo.png',
                 replacement: 'assets/img/klik-ev-logo.png',
                 recursive: true
+            },
+            cleanLogoBar01: {
+                path: 'dist/',
+                pattern: '../assets/img/aktion-mensch.png',
+                replacement: 'assets/img/aktion-mensch.png',
+                recursive: true
+            },
+            cleanLogoBar02: {
+                path: 'dist/',
+                pattern: '../assets/img/fixpunkt.png',
+                replacement: 'assets/img/fixpunkt.png',
+                recursive: true
+            },
+            cleanLogoBar03: {
+                path: 'dist/',
+                pattern: '../assets/img/haleakala.png',
+                replacement: 'assets/img/haleakala.png',
+                recursive: true
+            },
+            cleanLogoBar04: {
+                path: 'dist/',
+                pattern: '../assets/img/koep-logo.png',
+                replacement: 'assets/img/koep-logo.png',
+                recursive: true
+            },
+            cleanLogoBar05: {
+                path: 'dist/',
+                pattern: '../assets/img/skw.png',
+                replacement: 'assets/img/skw.png',
+                recursive: true
+            },
+            cleanLogoBar06: {
+                path: 'dist/',
+                pattern: '../assets/img/spi.png',
+                replacement: 'assets/img/spi.png',
+                recursive: true
+            },
+            cleanLogoBar07: {
+                path: 'dist/',
+                pattern: '../assets/img/spitzenverband.png',
+                replacement: 'assets/img/spitzenverband.png',
+                recursive: true
             }
         },
 
