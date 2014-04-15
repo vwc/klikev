@@ -71,17 +71,9 @@
         <copy attributes="href" css:content="#portal-logo" css:theme="a.navbar-brand" />
         <copy attributes="href" css:content="#portal-logo" css:theme="a.app-brand" />
 
-        <!-- Portal searchbox -->
-        <!--<copy attributes="action" css:content="#portal-searchbox form"
-            css:theme="#portal-searchbox" />-->
-
         <!-- Global navigation -->
         <replace css:content="#portal-globalnav li"
             css:theme-children="#app-navbar-nav" />
-
-        <!-- Breadcrumbs -->
-        <replace css:content-children='#portal-breadcrumbs'
-            css:theme-children='#breadcrumbs' />
 
          <!-- Login form rules -->
         <replace css:content-children="#content-core"
@@ -110,6 +102,9 @@
         <rules css:if-content="body.template-frontpage-view">
             <replace css:content="#app-box-01"
                 css:theme="#app-box-01" />
+            <replace css:content="#app-box-news"
+                css:theme="#app-box-news"
+                css:if-content="#app-box-news" />
         </rules>
 
         <replace css:content=".documentFirstHeading">
@@ -133,9 +128,8 @@
         <replace css:content-children="#viewlet-below-content"
             css:theme-children="#app-below-main-content" />
 
-        <!-- Columns example -->
-        <replace css:content-children="#portal-column-two > *"
-            css:theme-children="#app-sidebar" />
+        <replace css:content="#portal-globalnav li"
+            css:theme-children="#app-footer-nav-pills" />
 
     </rules>
 

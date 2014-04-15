@@ -11598,9 +11598,10 @@ dd.image-caption
 }
 .app-signin-group
 {
+    margin-bottom: 0;
     padding: 0;
 
-    background: #f69880;
+    background: #f2f2f2;
 }
 .app-signin-group.app-signin-group-text
 {
@@ -11712,6 +11713,10 @@ dd.image-caption
     border-top: 1px solid #999;
     background: #eee;
 }
+.app-footer a
+{
+    color: #434343;
+}
 .app-footer-nav
 {
     display: block;
@@ -11723,7 +11728,7 @@ dd.image-caption
 {
     .app-footer-nav
     {
-        width: 768px;
+        width: 600px;
     }
 }
 .app-toolbar + .app-header
@@ -11859,6 +11864,10 @@ dd.image-caption
     padding: 25px;
 
     border-left: 1px solid #555;
+}
+.app-box-item-title
+{
+    border-bottom: 1px solid #434343;
 }
 .page-header
 {

@@ -46,12 +46,12 @@
                 <div class="app-box-item"
                   tal:define="timestamp item/effective">
                   <div class="h6 app-box-item-title"
-                    tal:content="python:toLocalizedTime(timestamp, long_format=True)" />
+                    tal:content="python:toLocalizedTime(timestamp, long_format=False)" />
                   <p><span tal:content="item/Title" />
                     &hellip;
                     <a tal:attributes="href item/getURL">
                       <span class="fa-stack">
-                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-circle-o fa-stack-2x"></i>
                         <i class="fa fa-angle-right fa-stack-1x"></i>
                       </span>
                     </a>
