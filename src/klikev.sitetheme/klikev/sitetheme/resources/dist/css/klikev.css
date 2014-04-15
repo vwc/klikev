@@ -11699,9 +11699,9 @@ dd.image-caption
 
     border-top: 1px solid #999;
 }
-.app-logobar-section
+.app-logobar-section .thumbnail
 {
-    text-align: center;
+    border: none;
 }
 .app-footer
 {
@@ -11830,6 +11830,10 @@ dd.image-caption
     color: #fff;
     background: #f37256;
 }
+.app-box-header .app-box-headline > a
+{
+    color: #fff;
+}
 .app-box-content
 {
     padding: 25px;
@@ -11850,5 +11854,11 @@ dd.image-caption
 #content-core h4
 {
     color: #f37256;
+}
+.app-actionbar
+{
+    padding: 50px 0;
+
+    border-top: 1px solid #999;
 }
 /*# sourceMappingURL=klikev.css.map */

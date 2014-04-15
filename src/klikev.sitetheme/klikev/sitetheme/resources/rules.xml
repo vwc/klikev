@@ -107,6 +107,11 @@
                 css:if-content="body.template-pwreset_finish" />
 
 
+        <rules css:if-content="body.template-frontpage-view">
+            <replace css:content="#app-box-01"
+                css:theme="#app-box-01" />
+        </rules>
+
         <replace css:content=".documentFirstHeading">
             <div class="page-header">
                 <h1>

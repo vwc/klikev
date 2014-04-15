@@ -15,7 +15,27 @@
                     portal_url context/portal_url">
       <div class="row">
         <div class="col-xs-12 col-sm-4" id="app-col-1">
-
+            <div class="splashbox">
+              <div class="splashbox-header">
+                <div class="splashbox-icon">
+                  <i class="fa fa-smile-o fa-2x"></i>
+                </div>
+              </div>
+              <div class="app-box" id="app-box-01">
+                <div class="app-box-header">
+                  <div class="h5 app-box-headline">
+                    <a tal:attributes="href string:${portal_url}/das-projekt">
+                        Unser Angebot an dich
+                    </a>
+                  </div>
+                </div>
+                <div class="app-box-content">
+                    <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/appbox01" />
+                    <p>Bei uns können sich junge Menschen miteinander treffen, sich und seine Kleidung waschen und etwas Warmes essen. Als Kern unserer Aufgabe sehen wir die konstruktive Begleitung und Beratung junger Menschen. Wir ergreifen Partei und haben ein offenes Ohr für alle Themen, die das Leben auf der Straße betreffen.</p>
+                </div>
+              </div>
+            </div>
+            <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/mytile" />
         </div>
         <div class="col-xs-12 col-sm-4" id="app-col-2">
             Col B

@@ -198,44 +198,44 @@ module.exports = function (grunt) {
             },
             cleanLogoBar01: {
                 path: 'dist/',
-                pattern: '../assets/img/aktion-mensch.png',
-                replacement: 'assets/img/aktion-mensch.png',
+                pattern: '../assets/img/aktion-mensch.jpg',
+                replacement: 'assets/img/aktion-mensch.jpg',
                 recursive: true
             },
             cleanLogoBar02: {
                 path: 'dist/',
-                pattern: '../assets/img/fixpunkt.png',
-                replacement: 'assets/img/fixpunkt.png',
+                pattern: '../assets/img/fixpunkt.jpg',
+                replacement: 'assets/img/fixpunkt.jpg',
                 recursive: true
             },
             cleanLogoBar03: {
                 path: 'dist/',
-                pattern: '../assets/img/haleakala.png',
-                replacement: 'assets/img/haleakala.png',
+                pattern: '../assets/img/haleakala.jpg',
+                replacement: 'assets/img/haleakala.jpg',
                 recursive: true
             },
             cleanLogoBar04: {
                 path: 'dist/',
-                pattern: '../assets/img/koep-logo.png',
-                replacement: 'assets/img/koep-logo.png',
+                pattern: '../assets/img/johannitische-stiftung.jpg',
+                replacement: 'assets/img/johannitische-stiftung.jpg',
                 recursive: true
             },
             cleanLogoBar05: {
                 path: 'dist/',
-                pattern: '../assets/img/skw.png',
-                replacement: 'assets/img/skw.png',
+                pattern: '../assets/img/skw.jpg',
+                replacement: 'assets/img/skw.jpg',
                 recursive: true
             },
             cleanLogoBar06: {
                 path: 'dist/',
-                pattern: '../assets/img/spi.png',
-                replacement: 'assets/img/spi.png',
+                pattern: '../assets/img/spi.jpg',
+                replacement: 'assets/img/spi.jpg',
                 recursive: true
             },
             cleanLogoBar07: {
                 path: 'dist/',
-                pattern: '../assets/img/spitzenverband.png',
-                replacement: 'assets/img/spitzenverband.png',
+                pattern: '../assets/img/paritaetische.jpg',
+                replacement: 'assets/img/paritaetische.jpg',
                 recursive: true
             }
         },
