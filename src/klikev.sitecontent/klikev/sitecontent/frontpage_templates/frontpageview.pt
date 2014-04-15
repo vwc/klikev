@@ -15,7 +15,7 @@
                     portal_url context/portal_url">
       <div class="row">
         <div class="col-xs-12 col-sm-4" id="app-col-1">
-            Col A
+
         </div>
         <div class="col-xs-12 col-sm-4" id="app-col-2">
             Col B
