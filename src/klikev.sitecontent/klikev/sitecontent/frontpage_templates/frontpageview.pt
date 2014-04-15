@@ -41,7 +41,24 @@
             Col B
         </div>
         <div class="col-xs-12 col-sm-4" id="app-col-3">
-            Col C
+            <div class="app-box-content" id="app-box-news" tal:condition="view/has_newsitems">
+              <tal:block tal:repeat="item view/newsitems">
+                <div class="app-box-item"
+                  tal:define="timestamp item/effective">
+                  <div class="h6 app-box-item-title"
+                    tal:content="python:toLocalizedTime(timestamp, long_format=True)" />
+                  <p><span tal:content="item/Title" />
+                    &hellip;
+                    <a tal:attributes="href item/getURL">
+                      <span class="fa-stack">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-angle-right fa-stack-1x"></i>
+                      </span>
+                    </a>
+                  </p>
+                </div>
+              </tal:block>
+            </div>
         </div>
       </div>
     </section> <!-- /container app-content -->
