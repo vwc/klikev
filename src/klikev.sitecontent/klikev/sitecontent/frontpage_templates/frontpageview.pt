@@ -82,9 +82,9 @@
     </section> <!-- /container app-content -->
 
     <div class="app-languagebar" id="app-languagebar">
-      <div class="btn-group text-right">
-        <a class="btn btn-default btn-sm" tal:attributes="href string:${portal_url}/po-polsku">po polsku</a>
-        <a class="btn btn-default btn-sm" tal:attributes="href string:${portal_url}/english">english</a>
+      <div class="btn-group pull-right">
+        <a class="btn btn-primary btn-sm" tal:attributes="href string:${portal_url}/po-polsku">po polsku</a>
+        <a class="btn btn-primary btn-sm" tal:attributes="href string:${portal_url}/english">english</a>
       </div>
     </div>
 
