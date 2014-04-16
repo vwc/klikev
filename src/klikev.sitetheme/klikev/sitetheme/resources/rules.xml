@@ -100,8 +100,12 @@
 
 
         <rules css:if-content="body.template-frontpage-view">
+            <after css:content="#app-languagebar"
+                css:theme="#app-navbar" />
             <replace css:content="#app-box-01"
                 css:theme="#app-box-01" />
+            <replace css:content="#app-box-02"
+                css:theme="#app-box-02" />
             <replace css:content="#app-box-news"
                 css:theme="#app-box-news"
                 css:if-content="#app-box-news" />

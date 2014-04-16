@@ -35,10 +35,28 @@
                 </div>
               </div>
             </div>
-            <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/mytile" />
         </div>
         <div class="col-xs-12 col-sm-4" id="app-col-2">
-            Col B
+          <div class="splashbox">
+              <div class="splashbox-header">
+                <div class="splashbox-icon">
+                  <i class="fa fa-smile-o fa-2x"></i>
+                </div>
+              </div>
+              <div class="app-box" id="app-box-02">
+                <div class="app-box-header">
+                  <div class="h5 app-box-headline">
+                    <a tal:attributes="href string:${portal_url}/mitarbeit">
+                        Du willst helfen?
+                    </a>
+                  </div>
+                </div>
+                <div class="app-box-content">
+                    <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/appbox02" />
+                    <p>Wir möchten eine möglichst breite Betreuung unserer Klient*innen anbieten. Dazu brauchen wir ein starkes Netzwerk von Kooperationspartnern und Förderern. Wir freuen uns immer über ehrenamtliche Helfer und Praktikanten, die Ihre Zeit und ihr Wissen in unsere jungen Menschen auf der Straße investieren möchten.</p>
+                </div>
+              </div>
+            </div>
         </div>
         <div class="col-xs-12 col-sm-4" id="app-col-3">
             <div class="app-box-content" id="app-box-news" tal:condition="view/has_newsitems">
@@ -63,6 +81,12 @@
       </div>
     </section> <!-- /container app-content -->
 
+    <div class="app-languagebar" id="app-languagebar">
+      <ul class="nav nav-pills">
+        <li><a tal:attributes="href string:${portal_url}/po-polsku">po polsku</a></li>
+        <li><a tal:attributes="href string:${portal_url}/english">english</a></li>
+      </ul>
+    </div>
 
      <aside class="app-aside" id="app-aside">
         <section class="app-tile app-content-body" id="app-aside-content">
