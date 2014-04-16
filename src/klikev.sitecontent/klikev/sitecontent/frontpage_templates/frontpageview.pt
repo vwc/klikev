@@ -82,10 +82,10 @@
     </section> <!-- /container app-content -->
 
     <div class="app-languagebar" id="app-languagebar">
-      <ul class="nav nav-pills">
-        <li><a tal:attributes="href string:${portal_url}/po-polsku">po polsku</a></li>
-        <li><a tal:attributes="href string:${portal_url}/english">english</a></li>
-      </ul>
+      <div class="btn-group text-right">
+        <a class="btn btn-default btn-sm" tal:attributes="href string:${portal_url}/po-polsku">po polsku</a>
+        <a class="btn btn-default btn-sm" tal:attributes="href string:${portal_url}/english">english</a>
+      </div>
     </div>
 
      <aside class="app-aside" id="app-aside">
