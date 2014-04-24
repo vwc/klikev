@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="klikev.sitecontent">
+<body>
+
+<metal:main fill-slot="content-core">
+  <metal:content-core define-macro="content-core">
+
+    <section class="app-page app-content-fp" id="app-page"
+        tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                    portal_url context/portal_url">
+      <div class="app-list"
+        tal:define="Batch python:modules['Products.CMFPlone'].Batch;
+                    b_size python:int(request.get('b_size', 20));
+                    b_start python:int(request.get('b_start', 0));
+                    results python:context.restrictedTraverse('@@folderListing')(batch=True, b_size=b_size, b_start=b_start);
+                    batch python:Batch(results, b_size, b_start);">
+        <tal:block tal:repeat="item results">
+          <div class="app-list-item">
+            <h2><a tal:attributes="href item/getURL" tal:content="item/Title" /></h2>
+            <p tal:condition="item/Description"
+              tal:content=="item/Description" />
+            <hr>
+          </div>
+        </tal:block>
+        <div metal:use-macro="context/batch_macros/macros/navigation" />
+      </div>
+
+    </section> <!-- /container app-content -->
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+
