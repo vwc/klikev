@@ -11809,6 +11809,8 @@ dd.image-caption
 }
 .app-header-claim .app-header-claim-abstract
 {
+    margin-top: 0;
+
     text-transform: uppercase;
 }
 @media screen and (min-width: 768px)

@@ -1,0 +1,52 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="klikev.sitecontent">
+<body>
+
+<metal:main fill-slot="content-core">
+  <metal:content-core define-macro="content-core">
+
+    <section class="app-page app-content-fp" id="app-page"
+        tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                    portal_url context/portal_url">
+      <div class="row"
+        tal:define="results view/items">
+        <tal:block tal:repeat="item results">
+          <div class="col-xs-12 col-sm-4"
+            tal:define="idx repeat/item/index">
+              <div class="splashbox">
+                <div class="splashbox-header">
+                  <div class="splashbox-icon"
+                    tal:define="icon_klass python:view.get_icon_klass(idx)">
+                    <i class="fa fa-smile-o fa-2x" tal:attributes="class icon_klass"></i>
+                  </div>
+                </div>
+                <div class="app-box" id="app-box-01">
+                  <div class="app-box-header">
+                    <div class="h5 app-box-headline">
+                      <a tal:attributes="href item/getURL"
+                        tal:content=="item/Title" />
+                    </div>
+                  </div>
+                  <div class="app-box-content"
+                    tal:content="item/Description">
+                     Teser
+                  </div>
+                </div>
+              </div>
+          </div>
+        </tal:block>
+      </div>
+
+    </section> <!-- /container app-content -->
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+
