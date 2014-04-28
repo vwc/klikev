@@ -36,6 +36,14 @@
                     tal:content="item/Description">
                      Teser
                   </div>
+                  <div class="app-box-fotoer">
+                    <a tal:attributes="href item/getURL">
+                      <span class="fa-stack">
+                        <i class="fa fa-circle-o fa-stack-2x"></i>
+                        <i class="fa fa-angle-right fa-stack-1x"></i>
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
           </div>
