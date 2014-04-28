@@ -33,6 +33,14 @@
                     <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/appbox01" />
                     <p>Bei uns können sich junge Menschen miteinander treffen, sich und seine Kleidung waschen und etwas Warmes essen. Als Kern unserer Aufgabe sehen wir die konstruktive Begleitung und Beratung junger Menschen. Wir ergreifen Partei und haben ein offenes Ohr für alle Themen, die das Leben auf der Straße betreffen.</p>
                 </div>
+                <div class="app-box-footer">
+                  <a tal:attributes="href string:${portal_url}/das-projekt">
+                    <span class="fa-stack">
+                      <i class="fa fa-circle-o fa-stack-2x"></i>
+                      <i class="fa fa-angle-right fa-stack-1x"></i>
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
         </div>
@@ -54,6 +62,14 @@
                 <div class="app-box-content">
                     <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/appbox02" />
                     <p>Wir möchten eine möglichst breite Betreuung unserer Klient*innen anbieten. Dazu brauchen wir ein starkes Netzwerk von Kooperationspartnern und Förderern. Wir freuen uns immer über ehrenamtliche Helfer und Praktikanten, die Ihre Zeit und ihr Wissen in unsere jungen Menschen auf der Straße investieren möchten.</p>
+                </div>
+                <div class="app-box-footer">
+                  <a tal:attributes="href string:${portal_url}/mitarbeit">
+                    <span class="fa-stack">
+                      <i class="fa fa-circle-o fa-stack-2x"></i>
+                      <i class="fa fa-angle-right fa-stack-1x"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
